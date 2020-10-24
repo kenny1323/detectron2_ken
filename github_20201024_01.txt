@@ -1,6 +1,10 @@
 @Warday.
 Hi.
 Here you can find my directory /detectron2/demo
+https://github.com/kenny1323/detectron2_ken
+
+
+
 
 PART1
 About the box extraction I have renamed and edited 2 files.
