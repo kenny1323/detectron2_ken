@@ -1,0 +1,9 @@
+for F in /000myfiles/photoediting_007/NatlieAustin002_box/*png; do python3 extract_mask.py --config-file /000myfiles/anacondadir1/detectron2/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml --input $F --opts MODEL.DEVICE cpu MODEL.WEIGHTS detectron2://COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/model_final_f10217.pkl; done &
+
+
+
+cd /000myfiles/anacondadir1/detectron2/demo
+F='/000myfiles/photoediting_20200803/tmp1/000_pics_test__9_0_b.jpg.box_cropped0.png'
+
+python3 extract_mask.py --config-file /000myfiles/anacondadir1/detectron2/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml --input $F --opts MODEL.DEVICE cpu MODEL.WEIGHTS detectron2://COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/model_final_f10217.pkl &
+

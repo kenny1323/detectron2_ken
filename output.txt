@@ -1,0 +1,36 @@
+[32m[07/15 17:56:26 detectron2]: [0mArguments: Namespace(confidence_threshold=0.5, config_file='../configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml', input=['/000myfiles/anacondadir1/detectron2/demo/000028.jpg'], opts=['MODEL.DEVICE', 'cpu', 'MODEL.WEIGHTS', 'detectron2://COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/model_final_f10217.pkl'], output=None, video_input=None, webcam=False)
+[32m[07/15 17:56:27 fvcore.common.checkpoint]: [0mLoading checkpoint from detectron2://COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/model_final_f10217.pkl
+[32m[07/15 17:56:27 fvcore.common.file_io]: [0mURL https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/model_final_f10217.pkl cached in /root/.torch/fvcore_cache/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/model_final_f10217.pkl
+[32m[07/15 17:56:27 fvcore.common.checkpoint]: [0mReading a file from 'Detectron2 Model Zoo'
+tensor([[[False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False],
+         ...,
+         [False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False]],
+
+        [[False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False],
+         ...,
+         [False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False]],
+
+        [[False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False],
+         ...,
+         [False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False]],
+
+        [[False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False],
+         ...,
+         [False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False],
+         [False, False, False,  ..., False, False, False]]])
+[32m[07/15 17:56:31 detectron2]: [0m/000myfiles/anacondadir1/detectron2/demo/000028.jpg: detected 4 instances in 3.51s
