@@ -18,7 +18,7 @@ The file extract_person_box_core.py has a new block of code tagged START_BOXES_E
 Inside the file extract_person_box.py, in particular search the instruction crop. 
 
 You should read the file readme.md too.
-https://github.com/kenny1323/detectron2_ken/blob/master/README.md
+https://github.com/kenny1323/detectron2_ken/blob/master/README.txt
 
 
 
