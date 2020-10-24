@@ -74,6 +74,7 @@ class VisualizationDemo(object):
         instances_classes=predictions['instances'].pred_classes.tolist()
         #print(instances_pred_boxes)
         print('scores: ', instances.scores.numpy())
+		#START_MASK_EXTRACTION
         i=-1
         while i<len(instances_classes)-1:
             print('start while cycle')
@@ -100,6 +101,7 @@ class VisualizationDemo(object):
                 img.save(path+'._'+str(i)+'_extracted_mask_out1'+'.png')  # Save the modified pixelsarray1els as .png	
             time.sleep(2)	
             continue	
+		#END_MASK_EXTRACTION	
         exit()
         return predictions, vis_output
 

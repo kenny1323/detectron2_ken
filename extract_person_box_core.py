@@ -63,6 +63,10 @@ class VisualizationDemo(object):
                 instances = predictions["instances"].to(self.cpu_device)
                 vis_output = visualizer.draw_instance_predictions(predictions=instances)
         instances_pred_boxes=instances.pred_boxes.tensor.numpy()
+		
+		
+		#START_BOXES_ECTRACTION
+		#about the bellow while, I have used the condition while_i_lessthen_10 because I assume any scanned photo has max 10 detected objects, so max 10 boxes. 
         i=-1
         while i<10:
             i=i+1
@@ -81,6 +85,7 @@ class VisualizationDemo(object):
             #cropped_img.show()
             cropped_img.save(path+'.box_cropped'+str(i)+'.png')
             continue
+		#END_BOXES_ECTRACTION
         exit()
         return predictions, vis_output
 
