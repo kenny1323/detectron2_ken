@@ -1,0 +1,65 @@
+@Warday.
+Hi.
+Here you can find my directory /detectron2/demo
+
+PART1
+About the box extraction I have renamed and edited 2 files.
+1)demo.py is renamed extract_person_box.py; 
+2)predictor.py is renamed extract_person_box_core.py 
+
+
+
+The file extract_person_box.py basically is the same of the file demo.py, there are only few differences.
+The file extract_person_box_core.py has a new block of code tagged START_BOXES_ECTRACTION
+Inside the file extract_person_box.py, in particular search the instruction crop. 
+
+You should read the file readme.md too.
+https://github.com/kenny1323/detectron2_ken/blob/master/README.md
+
+
+
+##BOX EXTRACTION EXANPLE 
+#BASH COMMAND
+F="/SUPERDIR1"/allfile/1.png; 
+cd /000myfiles/anacondadir1/detectron2/demo
+python3 extract_person_box.py --config-file /000myfiles/anacondadir1/detectron2/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml --input $F --opts  MODEL.WEIGHTS detectron2://COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/model_final_f10217.pkl &
+sleep 3
+
+
+
+
+
+
+
+
+PART2
+About the mask extraction I have renamed and edited 2 files.
+1)demo.py is renamed extract_mask.py; 
+2)predictor.py is renamed extract_mask_core.py 
+
+
+
+The file extract_mask.py basically is the same of the file demo.py, there are only few differences.
+The file extract_mask_core.py has a new block of code tagged END_MASK_EXTRACTION.
+The image /detectron2/demo/000028.jpg._out1.png  is an example of mask extraction
+Basically, The alpha channel of any pixel of the mask is setted to zero. 
+
+url_image: https://github.com/kenny1323/detectron2_ken/blob/master/000028.jpg._out1.png
+
+
+
+
+
+
+##MASK EXTRACTION
+#BASH COMMAND
+F="/SUPERDIR1"/allfile/1000.png; 
+cd /000myfiles/anacondadir1/detectron2/demo
+python3 extract_mask_cumulative.py --config-file /000myfiles/anacondadir1/detectron2/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml --input $F --opts  MODEL.WEIGHTS detectron2://COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/model_final_f10217.pkl &
+sleep 3
+#The image /detectron2/demo/000028.jpg._out1.png  is an example of mask extraction
+#The alpha channel of any pixel of the mask is setted to zero. 
+
+
+
+
